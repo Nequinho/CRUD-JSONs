@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <style>
+        .caixa{
+            background-color: #9aecad;
+            margin-top: -21px;
+            margin-right: -8px;
+            margin-left: -8px;
+            padding: 5px;
+        }
+        h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d4edda;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #155724;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #28a745;
+            font-size: 1.2rem;
+        }
+
+        label {
+            font-size: 1rem;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: 95%;
+            padding: 10px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #28a745;
+            background-color: #f8f9fa;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.1rem;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="button"]:hover {
+            background-color: #218838;
+        }
+
+        .links-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .links-container a {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #155724;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin-right: 20px;
+        }
+
+        .links-container a:hover {
+            color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <H2 >Meu projeto</H2>
+    </div>
+    <div class="container">
+        <h1>Cadastro de Usuário</h1>
+        <form>
+            <h3>Preencha os dados</h3>
+            <label>CPF:</label>
+            <input type="text" id="cpfCadastro">
+            <br>
+            <label>Nome:</label>
+            <input type="text" id="nome">
+            <br>
+            <label>Idade:</label>
+            <input type="text" id="idade">
+            <input type="button" onclick="enviarDados()" value="Cadastrar">
+            <div class="links-container">
+                <a href="delete.html">Delete</a>
+                <a href="get.html">Get</a>
+                <a href="put.html">Put</a>
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+</html>
